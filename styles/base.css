@@ -3,9 +3,9 @@
     padding:0; /* set the padding and margin to be zero, this ensure uniform padding and margin later o*/
     margin:0;
 }
-body{
+p, nav{
     font-family: 'Arimo', 'Serif';
-    font-size: 16px;
+    font-size: 18px;
 }
 header,
 main,
@@ -43,8 +43,8 @@ h1{
     align-self: center;
 }
 header img{
-    width: 140px;
-    height: 180px;
+    width: 120px;
+    height: 150px;
 }
 
 nav{
@@ -83,6 +83,7 @@ nav ul li a:hover{
 }
 .card ul li{
     list-style-type: none;
+    
 }
 footer{
     background-color: rgb(48, 44, 44);
