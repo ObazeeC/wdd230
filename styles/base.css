@@ -1,0 +1,95 @@
+*{
+    box-sizing: border-box;
+    padding:0; /* set the padding and margin to be zero, this ensure uniform padding and margin later o*/
+    margin:0;
+}
+body{
+    font-family: 'Arimo', 'Serif';
+    font-size: 16px;
+}
+header,
+main,
+nav,
+footer{
+    max-width: 540px;
+    margin:0 auto;
+  
+}
+
+h1,h2{
+    font-family: 'Roboto', 'Serif';  
+}
+h2{
+    background-color: rgba(0,90,0,.3);
+    padding:.5rem;
+    text-align: center;   
+}
+.hed2{
+    background-color: white;
+    border-bottom: 2px solid rgba(0,90,0,.5);
+    margin:.5rem;
+}
+
+header{
+    background-color: rgba(0,90,0,.3);
+    color:rgb(88, 48, 2);
+    display: grid;
+    grid-template-columns: 150px 1fr;
+    padding:1rem; 
+}
+
+h1{
+    padding: 3rem;
+    align-self: center;
+}
+header img{
+    width: 140px;
+    height: 180px;
+}
+
+nav{
+    background-color: rgb(88, 48, 2);
+    padding:.5rem; 
+  
+}
+
+nav ul {
+   list-style-type: none; 
+  
+}
+
+nav ul li a {
+    color:white;
+    text-decoration: none;
+    font-weight: bold;
+    font-size: larger;
+    display: block;
+    padding:.6rem;
+    text-align: center;
+   
+}
+
+nav ul li a:hover{
+    background-color: bisque;
+    color:black;
+}
+.active{
+    background-color: black;
+}
+.card{
+    border:1px solid rgba(0,90,0,.5);
+    margin:1rem;
+    padding:.5rem;
+}
+.card ul li{
+    list-style-type: none;
+}
+footer{
+    background-color: rgb(48, 44, 44);
+    color:white;
+    padding:2rem;
+    text-align: center;
+}
+#lastModified{
+  color:yellow;
+}
