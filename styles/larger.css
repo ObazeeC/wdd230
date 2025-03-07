@@ -1,15 +1,4 @@
 @media screen and (min-width: 1200px){
-    header{
-        /*
-        display:grid;
-        grid-template-columns: 1fr 2.5fr;
-        gap:2rem;
-       
-        margin:0 auto;
-        align-items: center;*/
-        display:grid;
-        grid-template-columns: 1fr 1.5fr;
-    }
     header,
     nav,
     footer{
@@ -19,17 +8,32 @@
         max-width: 70%;
         display: grid;
         grid-template-columns: 1fr 1fr;
-        grid-template-rows: 60px 1fr;
+        grid-template-rows: 80px 1fr;
     }
-    .hed2{
-        grid-row:1fr;
+    header img{
+      
+       justify-self: end;
+       width: 150px;
+       height: 170px;
+    }
+
+    header img{
+        grid-template-columns: 1fr 3fr;
+        
+     }
+ 
+    h1{
+        grid-row:1;
         grid-column: 1/3;
+        
     }
-    
+    .name{
+        margin-left: 2rem;
+     }
+     
+
     nav ul{
         display: flex;
-        /*justify-content: center;
-        justify-content: space-around;*/
         justify-content: center;
         
     }
