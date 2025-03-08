@@ -19,7 +19,14 @@ h1,h2,h3{
     background-color: #5F0606;
     color: #DDFFF7;   
     padding:1rem;
-}
+}/*
+h2,h3{
+    font-family:'Adamina',"DM Serif Display", "Serif";
+    margin:.5rem;
+    background-color: #88baae;
+    color:#5F0606;
+    padding:1rem;
+}*/
 p,
 nav{
     font-family: 'Roboto','Adamina',  'serif';
@@ -33,4 +40,8 @@ nav ul li{
 }
 p{
     padding:1rem, 
+}
+span{
+    color: blue;
+    font-style: italic;
 }
