@@ -1,0 +1,36 @@
+*{
+    box-sizing: border-box;
+    padding:0;
+    margin:0;
+}
+body{
+    background-color: rgb(250, 250, 251);
+}
+header,
+main,
+nav,
+footer{
+    max-width: 900px;
+    margin: 1rem auto;
+}
+h1,h2,h3{
+    font-family:'Adamina',"DM Serif Display", "Serif";
+    margin:.5rem;
+    background-color: #5F0606;
+    color: #DDFFF7;   
+    padding:1rem;
+}
+p,
+nav{
+    font-family: 'Roboto','Adamina',  'serif';
+    font-size: 20px;
+    padding-left: .3rem;
+    
+}
+nav ul li{ 
+    list-style-type: none;
+    display:inline;
+}
+p{
+    padding:1rem, 
+}
