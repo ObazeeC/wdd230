@@ -1,6 +1,6 @@
 @media screen and (min-width: 1200px){
     header,
-    nav,
+   
     footer{
         max-width: 100%;
     }
@@ -33,17 +33,16 @@
      }
      
 
-    nav ul{
-        display: flex;
-        justify-content: center;
-        
+   .navbody{
+    display: flex;
+   }
+   .navbody li{
+     display:block;
+     flex:1 1 100%;
+   }
+    .navbody a{
+        text-align: center;
     }
-    nav ul li{
-        margin-left:5rem;
-        margin-right:5rem;
-    }
-   
-    
     
 }
 
