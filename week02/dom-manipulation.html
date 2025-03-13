@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+https://github.com/mdn/learning-area/blob/main/javascript/apis/document-manipulation/dinosaur.png<html lang="en-US">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Simple DOM example</title>
+    
+  </head>
+  <body>
+      <section>
+       <!--<p></p> --> 
+        <img src="/images/dinosaur.png" alt="A red Tyrannosaurus Rex: A two legged dinosaur standing upright like a human, with small arms, and a large head with lots of sharp teeth.">
+        <p>Here we will add a link to the <a href="https://www.mozilla.org/">Mozilla homepage</a></p>
+      </section>
+  </body>
+  <script>
+    const link = document.querySelector("a"); // this querySelector will match only the first ancor element, use querySelectorAll() to select all
+    link.textContent = "Mozilla Developer Network";
+    link.href = "https://developer.mozilla.org";
+
+    // Create new paragraph
+    const sect = document.querySelector('section');
+    const para = document.createElement('p');
+    para.textContent = "We hope you enjoyed the ride .";
+    // appendChild will *always* add to the bottom of the list
+    sect.appendChild(para);
+
+    // add a text node to the paragraph, i.e add more text to a paragraph element in the doc
+    // first we create the node, i.e the text we want to add
+    
+    const text = document.createTextNode(
+      " - The premier league is no longer the best league in the world.",
+    );
+
+    // grab a reference to the paragraph [the link inside], and append the text node to it:
+    // reference where you where you want the node to be added,
+    // in this is case, the first paragraph element 
+    const linkpara = document.querySelector('p');
+    linkpara.appendChild(text);
+
+    // MOVING AND REMOVING ELEMENTS
+    // to move the paragraph with the link inside to the bottom of the section
+    // use the appendChild to add to the bottom of the..
+    sect.appendChild(linkpara);
+
+    // remove a node
+    // pretty simple and straight forward
+
+    //sect.removeChild(linkpara);
+    // remove a node based only on a reference to itself.
+
+   // linkpara.remove();
+
+    // remove a node based only on a reference to itself in older browser.
+
+    // linkpara.parentNode.removeChild(linkpara);
+
+    
+
+    // Maniupating styles
+    /* 
+    1. Get a list of all the stylesheets attached to a document, using Document.stylesheets [ this returns an array -like object, with cssStylesheet objects]
+    2. You can then add/remove styles as wished.
+    This method is a difficult way to manipulate style.
+
+
+    2
+    LET CONSIDER A SIMPLE WAY
+    a. add a inline styles directly onto the elements you want to style; 
+       Use HTMLElement.style property
+        eg.
+    */
+     para.style.color = "white";
+     para.style.background = "black";
+     para.style.padding = "10px";
+     para.style.width = "250px";
+     para.style.textAlign = "center";
+
+   
+
+  </script>
+</html>
