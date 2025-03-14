@@ -60,7 +60,7 @@ header{
     top:1rem;
     right: .5rem;
     cursor:pointer;
-    border:2px solid yellow;
+ 
 }
 
 .name{
@@ -70,14 +70,13 @@ header{
    font-size: 20px;
    align-self: center;
    justify-self: center;
-   border: 2px solid red;
-   
+ 
 }
 
 header img{
     width: 120px;
     height: 150px;
-    border:2px solid blue;
+  
     
    
 }
