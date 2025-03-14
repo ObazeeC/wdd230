@@ -9,15 +9,22 @@ p, nav{
 }
 header,
 main,
-
+nav,
+#menu,
 footer{
-    max-width: 540px;
+    max-width: 460px;
     margin:0 auto;
 }
 
 
-h1,h2{
-    font-family: 'Roboto', 'Serif';  
+h2{
+    font-family: 'Roboto', 'Serif'; 
+    font-size: 17px;  
+   
+}
+h1{
+    font-family: 'Roboto', 'Serif'; 
+    font-size: 22px;
 }
 h2{
     background-color: rgba(0,90,0,.3);
@@ -37,34 +44,72 @@ h1{
 header{
     background-color: rgba(0,90,0,.3);
     color:rgb(88, 48, 2);
+    position:relative;
     display: grid;
-    grid-template-columns: 1fr 2fr;
+    gap:0;
+    grid-template-columns:25% 70% 5%;
     padding:1rem; 
-    
+    justify-items: center;
 }
+
+#mode{
+    height:40px;
+    width: 40px;
+   /* align-self: center;*/
+    position:absolute;
+    top:1rem;
+    right: .5rem;
+    cursor:pointer;
+    border:2px solid yellow;
+}
+
 .name{
    padding:1rem;
    font-family: 'Roboto', 'Serif';
    font-weight: bolder;
-   font-size: 30px;
+   font-size: 20px;
    align-self: center;
+   justify-self: center;
+   border: 2px solid red;
    
 }
-.profile{
-    border:2px solid red;
-}
+
 header img{
     width: 120px;
     height: 150px;
+    border:2px solid blue;
+    
    
 }
+#menu{
+    display:block;
+    font-size: 2rem;
+    font-weight: 700;
+    text-decoration: none;
+    padding: .5rem  .75rem;
+    background-color: rgba(45, 80, 35, 0.6);
+    color:black;
+}
+#menu::before{
+    content:"≡";
+    /*color:white;*/
+}
+/*
+#menu.show ~ nav .navbody li {
+    display: block;
+}*/
+
 nav{
     background-color: rgb(189, 218, 243);
 }
+
 .navbody{
     list-style: none;
     margin:0 auto;
     max-width: 760px;
+}
+.navbody li{
+    display: none;
 }
 .navbody a{
     display:block;
@@ -75,6 +120,8 @@ nav{
     font-weight: 700;
     font-size: clamp(1rem, 2vmin, 1.5rem);
 }
+
+
 .navbody a:hover {
    
 	background-color: rgba(114, 138, 158, 0.3);
@@ -82,7 +129,12 @@ nav{
 .active{
     background-color:  rgba(114, 138, 158, 0.3);
 }
-
+.show li{
+    display: block;
+}
+#menu.show::before{
+    content:"X";
+}
 .card{
     border:1px solid rgba(0,90,0,.5);
     margin:1rem;

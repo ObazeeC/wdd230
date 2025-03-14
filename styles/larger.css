@@ -1,4 +1,4 @@
-@media screen and (min-width: 1200px){
+@media screen and (min-width: 890px){
     header,
    
     footer{
@@ -10,27 +10,21 @@
         grid-template-columns: 1fr 1fr;
         grid-template-rows: 80px 1fr;
     }
-    header img{
-      
-       justify-self: end;
-       width: 150px;
-       height: 170px;
+  
+    nav
+    {
+        max-width: 70%;
+        margin:0 auto;
     }
-
-    header img{
-        grid-template-columns: 1fr 3fr;
-        
-     }
- 
+   
+  
+     
     h1{
         grid-row:1;
         grid-column: 1/3;
         
     }
-    .name{
-        margin-left: 2rem;
-        font-size: 40px;
-     }
+ 
      
 
    .navbody{
@@ -43,6 +37,8 @@
     .navbody a{
         text-align: center;
     }
-    
+    #menu{
+        display:none;
+    }
 }
 
