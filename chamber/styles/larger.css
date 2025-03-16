@@ -41,7 +41,8 @@
     {
         max-width: 100%;
         margin:0 auto;
-        background-color: blue;
+        background-color:rgba(130, 98, 98, .9);
+        
     }
 
     .navbody{
