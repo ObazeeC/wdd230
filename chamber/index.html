@@ -15,23 +15,26 @@
     <link rel="stylesheet" href="/styles/normalize.css">
     <link rel="stylesheet" href="styles/base.css">
     <link rel="stylesheet" href="styles/larger.css">
+    <script src="scripts/chamber.js" defer></script>
 </head>
 <body>
+   
     <header>
       <div class="pagelogo">
        <img loading="lazy" src="images/page-logo.png" alt="Site Logo">
       </div>
 
-      <div class="iconlogo">
-        <img loading="lazy" src="images/facebook.png" alt="Facebook logo">
-        <img loading="lazy" src="images/instagram.png" alt="Instagram">
-        <img loading="lazy" src="images/whatsapp.png" alt="Whatsapp">
-        <img loading="lazy" src="images/youtube.png" alt="Youtube">
+      <div class="iconlogo hedlogo">
+        <a href="#" ><img loading="lazy" src="images/facbook.webp" alt="Facebook logo"></a> 
+        <a href="#" > <img loading="lazy" src="images/instagram.webp" alt="Instagram"></a>  
+        <a href="#" ><img loading="lazy" src="images/whatsapp.png" alt="Whatsapp"></a>
+        <a href="#" ><img loading="lazy" src="images/youtube.png" alt="Youtube"></a> 
+        <a href="#" class="h-call">Join Our Channel</a>
       </div>
+
+      <a id="menu" href="#"></a>
     </header>
 
-  
-        <a id="menu" href="#"></a>
         <nav >
                 <ul class="navbody">
                     <li class="active"><a href="#">Home</a></li>
@@ -46,36 +49,97 @@
         </nav>
    
     <main>
+
         <div  class="hero"> 
          <picture>
             <source media="(min-width:900px)" srcset="images/hero-1500-765.webp" loading="lazy">
             <source media="(min-width:650px)" srcset="images/hero-750-383.webp" loading="lazy">
             <img loading="lazy" src="images/hero-image-350-179.webp"   alt="test" width="350" height="179">
          </picture>
-         <a href="#">Join Our Channel</a>
+         <a href="#" >Join Our Channel</a>
         </div>
-          <section>current event section;:: Lorem ipsum dolor sit amet consectetur adipisicing elit. A voluptatum alias ducimus hic cupiditate aliquam totam temporibus repellendus soluta quae.</section>
-          <section>weather section
-            Temp:#
-            Humditity:#
+      
+
+
+
+
+        <div class ="m-grd">
+
+      
+          <section class="section1">
+            <h2 >Current events</h2>
+            <div class="ese" >
+                <img loading="lazy" src="images/spotlight.webp" alt="image placeholder">
+                <img loading="lazy" src="images/spotlight.webp" alt="image placeholder">
+            </div>
+            <div class="sport02">
+                <a href="#" >Collaboration</a>
+                <a href="#" >Mentorship</a>
+                <a href="#" >Networking</a>
+                <a href="#" >Workshops </a>
+            </div>
           </section>
-          <section>Contains one to three company 'spotlights' adverstisement
-            <p>one</p>
-            <p>two</p>
-            <p>Three</p>
+
+
+          <section class="section2">
+            <h2>Weather Condition</h2>
+            <p> Temperature:# </p>
+            <p> Humdity:#</p>
+            <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Iusto autem velit numquam optio consectetur excepturi ab. Deleniti ipsam aliquam quasi.</p>
           </section>
+
+
+          <section class="section3">
+            <h2>one to three 'spotlights' adverstisement</h2>
+            <figure> 
+                <figcaption>PLACEHOLDER 004</figcaption>
+                <a href="#" ><img loading="lazy" src="images/spotlight.webp" alt="image placeholder"></a>
+             </figure>
+             <figure> 
+                <figcaption>PLACEHOLDER 004</figcaption>
+                <a href="#" ><img loading="lazy" src="images/spotlight.webp" alt="image placeholder"></a>
+             </figure>
+             <figure> 
+                <figcaption>PLACEHOLDER 004</figcaption>
+                <a href="#" ><img loading="lazy" src="images/spotlight.webp" alt="image placeholder"></a>
+             </figure>
+             <figure> 
+                <figcaption>PLACEHOLDER 004</figcaption>
+                <a href="#" ><img loading="lazy" src="images/spotlight.webp" alt="image placeholder"></a>
+             </figure>
+          </section>
+
+          <section class="section004">
+            <a href="#" >Placeholder 005</a>
+            <p>|</p>
+            <a href="#" >Placeholder 006</a>
+          </section>
+
+        </div>
+
+
+
     </main>
 
+
     <footer>
-        <p>©️ <span id="getYear"></span> | Esosa C. Obazee | WDD 230 Chamber of Commerce Project</p>
-        <p> Last Modified <span id="lastModified"></span></p>
-        <P>Some additional information</P>
-        <P>Some additional information</P>
-        <div class="iconlogo flogo">
-            <img loading="lazy" src="images/facebook.png" alt="Facebook logo">
-            <img loading="lazy" src="images/instagram.png" alt="Instagram">
-            <img loading="lazy" src="images/whatsapp.png" alt="Whatsapp">
-            <img loading="lazy" src="images/youtube.png" alt="Youtube">
+        <div class="f-getdate">
+            <p>©️ <span id="getYear"></span> | Esosa C. Obazee | WDD 230 Chamber of Commerce Project</p>
+            <p> Last Modified <span id="lastModified"></span></p>
+        </div>
+        
+        <div class="f-additional"> 
+            <P>Some additional information</P>
+            <P>Some additional information</P>
+            <P>Some additional information</P>
+            <P>Some additional information</P>
+        </div>
+     
+        <div class="iconlogo footlogo">
+            <a href="#" ><img loading="lazy" src="images/facbook.webp" alt="Facebook logo"></a> 
+            <a href="#" > <img loading="lazy" src="images/instagram.webp" alt="Instagram"></a>  
+            <a href="#" ><img loading="lazy" src="images/whatsapp.png" alt="Whatsapp"></a>
+            <a href="#" ><img loading="lazy" src="images/youtube.png" alt="Youtube"></a> 
           </div>
     </footer>
 </body>

@@ -1,5 +1,88 @@
+*{
+    box-sizing: border-box;
+    padding:0;
+    margin:0;
+}
+.pagelogo img{
+    width: 100px;
+    height: auto;
+}
+header,
+nav,
+main,
+#menu,
+footer{
+    max-width: 500px;
+    margin:0 auto;
+}
+nav{
+    border:3px solid orange;
 
+}
+.iconlogo img{
+    width: 30px;
+    height: auto;
+    border: 2px solid red;
+}
+.hedlogo{
+    display: none;
+}
 
+header{
+    background-color: rgba(150, 98, 118, .9);
+    position:relative;
+
+}
+#menu{
+    display:block;
+    font-size: 40px;
+    font-weight: 900;
+    padding:.5rem .7rem;
+    text-decoration: none;
+    color:#ddfff7;
+    position:absolute;
+    top:0;
+    right:0;
+}
+#menu::before{
+    content:"≡";
+}
+
+.navbody{
+    list-style: none;
+    margin: 0 auto;
+    max-width: 500px;
+    background-color: rgba(130, 98, 98, .5);
+    
+}
+
+.navbody a{
+    display: block;
+    padding: 0.5rem;
+    text-align: center;
+    text-decoration: none;
+    font-weight: 700;
+    font-size: clamp(1rem, 2vmin, 1.5rem);
+    color:black;
+}
+
+.active{
+    background-color:rgba(130, 98, 98, .9);
+}
+.navbody a:hover{
+    background-color:rgba(130, 98, 98, .9);
+}
+.navbody li{
+    display: none;
+}
+/* .show here MAKE SURE .SHOW COMES AFTER DISPLAY NONE FOR LI, ELSE IT WILL NOT WORK*/
+.show li{
+    display: block; 
+    
+}
+#menu.show::before{
+    content:"X";
+}
 
 
 
@@ -7,3 +90,125 @@
     width:100%;
     height:auto;
 }
+
+.hero a{
+    text-decoration: none;
+    display: block;
+    border: 2px solid rgba(130, 98, 98, .5);
+    width: 150px;
+    padding:.5rem;
+    margin:1.3rem auto;
+    font-size: 16px;
+    text-align: center;
+  
+ }
+ .hero a:hover{
+    width: 160px;
+    padding: .7rem;
+    transition: width 1s; 
+    font-size: 17px;
+ }
+ section,footer{
+    border:5px solid rgb(202, 231, 97);
+    margin:1rem auto;
+ }
+
+
+ .section1 img{
+    width:220px;
+    height:auto;
+    margin:1rem;
+    border:2px solid yellow;
+    
+ }
+
+
+  .section1{
+    padding: .5rem;
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    grid-template-rows: .2fr 2fr;
+    gap:1rem;
+   }
+   
+   .section1 h2{
+    border: 2px solid red;
+    padding:.5rem;
+    grid-column: 1/3;
+    text-align: center;
+}
+
+.sport02 a{
+    display: block;
+    padding:.3rem;
+    text-align: left;
+    margin-left: 4rem;
+ 
+  }
+  .sport02{
+    border:2px solid black;
+    width: 200px;
+    grid-column: 2;
+    align-self:center;
+  }
+
+  .section2  h2, .section2 p{
+    text-align: center;
+  }
+
+  
+  .section3{
+    display: grid;
+    grid-template-columns: 1fr;
+    grid-template-rows: .2fr 2fr;
+    justify-items: center;
+    
+  }
+  .section3 h2{
+    grid-column: 1/2;
+    text-align: center;
+  }
+  .section3 img{
+    width: 350px;
+    height: auto;
+  }
+  .section3 figure{
+   padding: 1rem;
+  }
+  .section3 img:hover{
+    width: 400px;
+    transition: width 1s;
+  }
+  .section004{
+    display: flex;
+    padding:.5rem;
+    margin:.3rem;
+    text-align: center;
+  }
+  .section004 a, .section004 p {
+    border:2px solid orange;
+    margin: 1rem auto;
+    padding:1rem;
+    text-decoration: none;
+  }
+  .section004 p {
+    border: none;
+    font-size: 25px;
+    font-weight: bold;
+  }
+
+  .f-additional{
+    display: none;
+  }
+  .f-getdate p {
+    text-align: center;
+  }
+  .footlogo{
+    margin-top:.3rem;
+  }
+  footer{
+    padding:1rem;
+    display: grid;
+    grid-template-columns: 1fr;
+    justify-items: center;
+  }
