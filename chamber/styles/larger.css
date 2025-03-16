@@ -93,7 +93,13 @@
         grid-column: 1;
         grid-row:1/4;
         grid-template-columns: 1fr;
+       
         }
+
+      .section1 img{
+        width:320px;
+        height:auto;
+      }
         
      .section2{
       grid-row:1 ;
