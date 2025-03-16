@@ -1,10 +1,18 @@
-@media screen and (min-width: 900px){
+@media screen and (min-width: 1200px){
     header,
     nav,
     main,
     #menu,
     footer{
-        width: 100%;
+        max-width: 100%;
+    }
+    h1{
+      max-width: 50%;
+      margin:1.5rem auto;
+      border: 2px solid green;
+      text-align: center;
+      padding:.7rem;
+
     }
     header{
     position:relative;
