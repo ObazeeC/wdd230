@@ -1,0 +1,31 @@
+header,
+footer{
+border: 2px solid rgba(5,5,5,.2);
+background-color: beige;
+margin-top:1rem;
+text-align: center;
+}
+main{
+margin:0 auto;
+border: 2px solid rgba(5,5,5,.2);
+justify-content: center;
+margin-top:1rem
+}
+
+img{
+   padding:.7rem;
+   display: block;
+   margin:0 auto;
+ /*   background-color: #000;*/
+   animation:fade 10s;
+}
+@keyframes fade {
+    0%{
+        opacity:0;
+    }
+    100%{
+        opacity: 1;
+    }
+}
+
+
