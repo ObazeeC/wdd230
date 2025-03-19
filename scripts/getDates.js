@@ -34,3 +34,19 @@ modeButton.addEventListener("click", () => {
 		modeButton.textContent = "blac";
 	}
 });
+
+// use local storage to get number of visit
+
+const visits = document.querySelector(".visit");
+
+let numberOfVisits = Number(window.localStorage.getItem("visit-key")) || 0;
+if(numberOfVisits !== 0){
+	visits.textContent = numberOfVisits;
+}else{
+	visits.textContent = `Your first visit. Benvenuto !`;
+}
+numberOfVisits++;
+
+localStorage.setItem("visit-key", numberOfVisits);
+
+

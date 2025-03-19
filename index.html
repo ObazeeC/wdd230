@@ -28,7 +28,7 @@
 <body>
     <header>
         
-         <img src="images/profile-picture.jpg" alt="profile picture Esosa" height="361" width="289"><span class="name">Esosa C. Obazee</span>
+         <img class="himg" src="images/profile-picture.jpg" alt="profile picture Esosa" height="361" width="289"><span class="name">Esosa C. Obazee</span>
 
          <img src="images/dark-theme-svgrepo-com.svg" alt="dark mode" id="mode">
         
@@ -44,18 +44,26 @@
             </ul>  
     </nav>
     <main>
+        <div class="hero">
+            <picture>
+                <source media="(max-width:500px )" srcset="/week03/images/hero-small.webp">
+                <source media="(max-width: 1000px )" srcset="/week03/images/hero-medium.webp">
+                <img src="/week03/images/hero-large.webp" alt="Rome Italy Temple" width="1500" height="750" loading="lazy">
+            </picture>
+            <p>Rome Italy Temple</p>
+        </div>
        <h1>WDD 230: Web Frontend Development</h1>
        
        <section class="card">
         <h2> Learning Activities</h2>
-        <p>Week 01:  </p>
-        <p>Week 02: </p>
-        <p>Week 03:  <a href="week03/images/landscape.webp">landscape Image</a></p>
+        <p>Week 01:  <a href="#">#</a> | <a href="#"> # </a> | <a href="#"> # </a> | <a href="#"> # </a></p>
+        <p>Week 02:  <a href="#">#</a> | <a href="#"> # </a> | <a href="#"> # </a> | <a href="#"> # </a></p>
+        <p>Week 03:  <a href="#">#</a> | <a href="#"> # </a> | <a href="#"> # </a> | <a href="#"> # </a></p>
         <p>Week 04: </p>
         <p>Week 05: </p>
         <p>Week 06: </p>
         <ul>
-            <li><a href="#"> placeholder</a></li>
+            
             <a href="week03/images/landscape.webp">landscape Image</a>
         </ul>
        </section>
@@ -65,11 +73,13 @@
         <!--Information placeholder about the weather, number of visits to the page-->
         <p>Abuja, Nigeria</p>
         <p> Weather: </p>
-        <p> Number of Visit: </p>
+        <p> Number of Visit: <span class="visit"></span> </p>
        </section>
 
+       <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d253790.59216078767!2d5.447493054421302!3d6.332063016597348!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x1040d36279cfacf1%3A0x84aa10c05758dfa0!2sBenin%20City%2C%20Edo%2C%20Nigeria!5e0!3m2!1sen!2suk!4v1742418897715!5m2!1sen!2suk"  allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
     </main>
-
+  
+    
     <footer>
         <p>©️ <span id="getYear"></span> | Esosa C. Obazee | Nigeria </p>
         <p> Last Modified <span id="lastModified"></span></p>
