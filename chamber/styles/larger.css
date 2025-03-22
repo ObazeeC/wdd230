@@ -6,36 +6,46 @@
     footer{
         max-width: 100%;
     }
+
     h1{
       max-width: 50%;
       margin:1.5rem auto;
-      border: 2px solid green;
       text-align: center;
       padding:.7rem;
-
     }
+
     header{
     position:relative;
-    
     }
+
     .hedlogo{
         display: flex;
         position: absolute;
         top:2rem;
         right:20%; 
     }
-   .h-call{
-    border:2px solid blue;
-    margin-left: 3rem;
 
+   .h-call {
+    border:2px solid rgba(255, 165, 0, .5);
+    padding:1rem;
+    font-size: 20px;
+    color:#000;
+    margin-left: 2rem;
+    border-radius: .4rem;
    }
-    .hedlogo img{
+
+   .h-call:hover{
+    background-color: rgba(243, 214, 159, 0.5);
+   }
+
+  .hedlogo img{
         margin:.3rem; 
-    }
-    .pagelogo{
+  }
+
+  .pagelogo{
         position:relative;
         left:28%;
-    }
+   }
 
     nav
     {
@@ -47,42 +57,54 @@
 
     .navbody{
         display: flex;
+        max-width: 600px;
         
        }
+
      .navbody li{
          display:block;
          flex:1 1 100%;
        }
     .navbody a{
         text-align: center;
+        color:white;
         }
+
+ .active{
+          background-color:rgba(3, 61, 6, 0.5);
+      }
+
+ .navbody a:hover{
+        background-color:rgba(130, 98, 98, .9);
+        color:#000;
+       
+    }
 
     #menu{
         display:none;
      } 
+
      .h-call{
         text-decoration: none;
         padding:.5rem;
      }
+
      .hero{
         position:relative;
      }
+
     .hero a{
         width: 250px;
        position:absolute;
        top:40%; 
        left:43%;
        padding:1rem;
-       color:white;
-
-    }
-    .hero a:hover{
-        width: 270px;
-        padding: .7rem;
-        transition: width 1s; 
        
-     
-     }
+    }
+
+    .hero a:hover{
+      background-color:rgba(240, 205, 205,.8);
+    }
      .m-grd{
       display: grid;
       grid-template-columns: 1fr 3fr;
@@ -137,8 +159,8 @@
       
       footer{
         display: grid;
-        grid-template-columns: 1fr 1fr 1fr;
-  
+        grid-template-columns: 1fr 1fr 1fr .5fr;
+        text-align: center;
         
       }
       

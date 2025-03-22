@@ -4,7 +4,8 @@
     margin:0;
 }
 .pagelogo img{
-    width: 100px;
+    padding:.5rem;
+    width: 110px;
     height: auto;
 }
 header,
@@ -18,36 +19,41 @@ footer{
 nav{
     border-bottom:3px solid rgba(255, 165, 0, .5);
 
-
 }
 .iconlogo img{
     width: 30px;
     height: auto;
-    border: 2px solid red;
+   
+}
+.iconlogo img:hover{
+  width: 28px;
+ 
 }
 .hedlogo{
     display: none;
 }
 
 header{
-    background-color: rgba(150, 98, 118, .9);
+    background-color: rgba(130, 98, 98, 0.302);
     position:relative;
-
+}
+h1, h2{
+  background-color: rgba(130, 98, 98, 0.302);
+  
 }
 h1{
   max-width: 430px;
-  border-bottom: 1px solid green;
   text-align: center;
   padding:.2rem;
- 
 }
+
 #menu{
     display:block;
     font-size: 40px;
     font-weight: 900;
     padding:.5rem .7rem;
     text-decoration: none;
-    color:#ddfff7;
+    color:#000;
     position:absolute;
     top:0;
     right:0;
@@ -102,20 +108,20 @@ h1{
 .hero a{
     text-decoration: none;
     display: block;
-    border: 2px solid rgba(130, 98, 98, .5);
-    width: 150px;
+   /* border:2px solid rgba(255, 165, 0, .5);*/
+    background-color:rgba(240, 205, 205,.5);
+    border:2px solid rgba(240, 205, 105,.8);
+    border-radius: .5rem;
+
+    width: 200px;
     padding:.5rem;
     margin:1.3rem auto;
-    font-size: 16px;
+    font-size: 20px;
+    color:#000;
     text-align: center;
   
  }
- .hero a:hover{
-    width: 160px;
-    padding: .7rem;
-    transition: width 1s; 
-    font-size: 17px;
- }
+ 
  section,footer{
     border:5px solid rgb(202, 231, 97);
     margin:1rem auto;
@@ -190,13 +196,21 @@ h1{
     margin:.3rem;
     text-align: center;
   }
-  .section004 a, .section004 p {
-    border:2px solid orange;
+  .section004 a{
+    border:2px solid rgba(255, 165, 0, .5);
     margin: 1rem auto;
     padding:1rem;
     text-decoration: none;
+    color:#000;
+    font-size: 20px;
   }
+  .section004 a:hover{
+    background-color: rgba(243, 214, 159, 0.5);
+   
+   }
   .section004 p {
+    margin: 1rem auto;
+    padding:1rem;
     border: none;
     font-size: 25px;
     font-weight: bold;
@@ -216,9 +230,14 @@ h1{
   h3{
     margin-bottom:.5rem;
   }
+  .ref a{
+    display: block;
+  }
   footer{
     padding:1rem;
     display: grid;
     grid-template-columns: 1fr;
     justify-items: center;
+    background-color: rgba(130, 98, 98, .1);
+    color:#000;
   }
