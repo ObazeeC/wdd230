@@ -140,7 +140,7 @@ h1{
    .sidLink,
    .locaStorage{
     border:2px solid rgba(243, 214, 159, 0.5);
-    width: 90%;
+    width: 96%;
     height: auto;
     margin:.5rem auto;
     border-radius: .2rem;
@@ -171,7 +171,7 @@ h1{
     max-width: 400px;
   }
 .section1 img{
-  width:390px;
+  width:96%;
   display: block;
   height:auto;
   margin:.5rem auto;
