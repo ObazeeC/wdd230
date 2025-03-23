@@ -142,7 +142,7 @@ h1{
     border:2px solid rgba(243, 214, 159, 0.5);
     width: 96%;
     height: auto;
-    margin:.5rem auto;
+    margin:0 auto;
     border-radius: .2rem;
    }
    .sidLink a,.locaStorage p{
@@ -204,7 +204,7 @@ h1{
     text-align: center;
   }
   .section3 img{
-    width: 390px;
+    width: 460px;
     height: auto;
   }
   .section3 figure{
