@@ -149,10 +149,14 @@
      .section3 img{
         width: 330px;
         height: auto;
-       
+      
       }
-
-    
+      
+  .section3 img:hover{
+    width: 320px;
+    transition: width 1s;
+    border-bottom: 5px solid rgba(240, 205, 105,.8);
+  }
       .section004{
         max-width: 70%;
         margin: 0 auto;
