@@ -32,21 +32,23 @@ nav{
 .hedlogo{
     display: none;
 }
-
+.m-grd h2{
+  padding:.5rem;
+  background-color: rgba(130, 98, 98, 0.302);
+}
 header{
     background-color: rgba(130, 98, 98, 0.302);
     position:relative;
 }
-h1, h2{
-  background-color: rgba(130, 98, 98, 0.302);
-  
-}
+
 h1{
   max-width: 100%;
   text-align: center;
   padding:.2rem;
 }
-
+p{
+  padding:3px;
+}
 #menu{
     display:block;
     font-size: 40px;
@@ -126,8 +128,6 @@ h1{
   
     margin:1rem auto;
  }
-
-
  
 
   .section1{
@@ -136,10 +136,15 @@ h1{
     max-width: 500px;
     border-radius: .5rem;
     margin-left: 1rem;
+    color:#000;
+    background-color: rgb(240, 248, 255);
+    border:1px solid rgb(0, 0, 0,.1);;
+  }
+   .section1 div{
+    margin:.5rem;
    }
    .sidLink,
    .locaStorage{
-    border:2px solid rgba(243, 214, 159, 0.5);
     width: 96%;
     height: auto;
     margin:0 auto;
@@ -148,11 +153,9 @@ h1{
    .sidLink a,.locaStorage p{
     display: block;
     text-decoration: none;
-    color:#000;
-    background-color: aliceblue;
+    color:black;
     padding:3px;
-    padding-left:8px;
-
+    
    }
    .sidLink a{
     text-decoration: underline;
@@ -165,7 +168,6 @@ h1{
    }
    
    .section1 h2{
-    border: 2px solid red;
     grid-column: 1/3;
     text-align: center;
     max-width: 400px;
@@ -190,7 +192,10 @@ h1{
   .section2  h2, .section2 p{
     text-align: center;
   }
-
+  .section2{
+    width: 80%;
+    padding:.5rem
+  }
   
   .section3{
     display: grid;
@@ -204,11 +209,25 @@ h1{
     text-align: center;
   }
   .section3 img{
-    width: 460px;
-    height: auto;
+    width: 350px;
+    height: 250px;
   }
   .section3 figure{
    padding: 1rem;
+  }
+  .m-grd figure{
+    border: 2px solid rgba(243, 214, 159, 0.5);
+    background-color: rgba(185, 166, 129, 0.2);
+    margin:1rem;
+  }
+  .m-grd figcaption{
+    font-weight: bold;
+    text-align: center;
+    font-size: 18px;
+  }
+  .m-grd figure p{
+    max-width: 335px;
+    
   }
   .section004{
     display: flex;

@@ -7,14 +7,18 @@
         max-width: 100%;
     }
 .m-grd{
-  max-width: 80%;
+  max-width: 90%;
   margin: 0 auto;
+
 }
     h1{
-      max-width: 50%;
-      margin:1.5rem auto;
       text-align: center;
       padding:.7rem;
+       font-size: 45px;
+       position:relative;
+       left:9rem;
+       width:90%;
+       border-bottom: 2px solid rgba(255, 165, 0, .1);
     }
 
     header{
@@ -111,15 +115,18 @@
      .m-grd{
       display: grid;
       grid-template-columns: 1fr 3fr;
-      grid-template-rows:.4fr 2.5fr .3fr
+      grid-template-rows:.4fr 2.5fr .3fr;
+  
      } 
-
+     .milanh2{
+      font-size: 36px;
+     }
  
      .section1{
         grid-column: 1;
         grid-row:1/4;
         grid-template-columns: 1fr;
-        background-color: rgba(255, 165, 0, .1);
+        
         margin:.4rem;
        
         }
@@ -151,14 +158,13 @@
 
      .section3 img{
         width: 330px;
-        height: auto;
-      
+        
       }
       
   .section3 img:hover{
-    width: 320px;
+    width: 335px;
     transition: width 1s;
-    border-bottom: 5px solid rgba(240, 205, 105,.8);
+    border-bottom: 5px solid rgba(147, 243, 171, 0.8);
   }
       .section004{
         max-width: 70%;
