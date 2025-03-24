@@ -6,7 +6,10 @@
     footer{
         max-width: 100%;
     }
-
+.m-grd{
+  max-width: 80%;
+  margin: 0 auto;
+}
     h1{
       max-width: 50%;
       margin:1.5rem auto;
