@@ -120,6 +120,7 @@
      } 
      .milanh2{
       font-size: 36px;
+     
      }
  
      .section1{
@@ -127,7 +128,7 @@
         grid-row:1/4;
         grid-template-columns: 1fr;
         
-        margin:.4rem;
+        margin:1rem;
        
         }
         .section1{
@@ -152,7 +153,7 @@
 
      .section3 h2{
         grid-column: 1/4;
-        width: 100%;
+        width: 80%;
         padding:.3rem;
      } 
 

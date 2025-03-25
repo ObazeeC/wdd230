@@ -133,9 +133,9 @@ p{
   .section1{
     display: grid;
     grid-template-columns: 1fr;
-    max-width: 500px;
+    max-width: 420px;
     border-radius: .5rem;
-    margin-left: 1rem;
+    margin: 1rem auto;
     color:#000;
     background-color: rgb(240, 248, 255);
     border:1px solid rgb(0, 0, 0,.1);;
