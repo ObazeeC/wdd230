@@ -25,6 +25,13 @@
     position:relative;
     }
 
+    #greetings{
+      font-size: 48px;
+      color: rgb(14, 14, 122);
+      font-variant: small-caps;
+      
+    }
+    
     .hedlogo{
         display: flex;
         position: absolute;
