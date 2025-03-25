@@ -226,7 +226,9 @@ p{
     font-size: 18px;
   }
   .m-grd figure p{
+    font-weight: 300;
     max-width: 335px;
+    text-align: left;
     
   }
   .section004{
