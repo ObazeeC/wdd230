@@ -23,6 +23,7 @@
     --primary-color:#f1f2;
     --font-size: 18px;
     --padding:1rem;
+    --spancolor : red;
 }
 
 #rng {
@@ -33,7 +34,7 @@
 
 #rangeValue {
 	font-size: 2rem;
-    color:yellow;
+   /* color:yellow;*/
     font-size: 32px;
 	margin: 0 0 0 25px;
     font-weight: bold;
@@ -43,7 +44,7 @@
 	display: flex;
 	margin: 0 0 0 38px;
     width: 450px;
-    color:yellow;
+   /* color:yellow;*/
 
 }
 
@@ -55,9 +56,11 @@
 .regform{
     width:100%;
     max-width: 490px;
-    background-color: green;
-    margin:1.5rem auto;
-    
+   background-color: rgb(177, 245, 177);
+    margin:1.5rem auto;  
+}
+.regform span{
+    color: var(--spancolor);
 }
 .regform label{
     display: block;
@@ -92,15 +95,6 @@
     margin : 1rem auto;
 }
 
-#passw01:invalid {
-	background-color: #fff0f3;
-	animation: shaketext 500ms;
-}
-.req::after {
-	font-size: 10px;
-	content: " *️⃣";
-}
-
 .regform [type="submit"]{
     padding:1rem;
     width: 450px;
@@ -112,14 +106,3 @@
 }
 
 
-@keyframes shaketext {
-	25% {
-		transform: translateX(3px);
-	}
-	50% {
-		transform: translateX(-3px);
-	}
-	75% {
-		transform: translateX(3px);
-	}
-}
