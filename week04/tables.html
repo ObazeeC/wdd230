@@ -1,0 +1,166 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Tables</title>
+    <style>
+        header,
+        footer,
+        main{
+            max-width: 40%;
+            margin:0 auto;
+                    }
+            table{
+                border-collapse:collapse;
+                border-spacing:0;
+                border:2px solid rgb(140 140 140);
+                font:16px "open Sans", Helvetica, Arial, sans-serif;
+            }
+            caption{
+                caption-side: bottom;
+                padding:10px;
+                font-weight: bold;
+            }
+            thead > tr,
+            tfoot > tr{
+                background-color: rgb(228 240 245);
+            }
+            th,
+            td{
+                border: 1px solid rgb(160 160 160);
+                padding:4px 6px;
+             }
+             th{
+                vertical-align: bottom; /* aligns the content of the header to the bottom of the cell */
+             }
+             thead > tr{  /* set the bg color of all tr elements in the tables head (: as specific to thead)*/
+              background-color: rgb(228 240 245);
+             }
+             thead >tr:nth-of-type(2){ /* sets the bottom border of the head */
+               border-bottom: 2px solid rgb(140 140 140);
+             }
+             thead > tr:last-of-type >th:nth-of-type(1){ /* select the last row of the head, and the first head of that row*/
+                background-color: green;
+                color:white;
+             }
+             thead > tr:last-of-type > th:nth-of-type(2){ /*  Select the last row of the head, and the second head of that row */
+                background-color: red;
+              
+             }
+             tbody > tr >th:first-of-type{ /* select the  all the rows in the body, and only the first column */
+                text-align: left;
+                background-color: rgb(225 229 244);  
+             }
+             tbody > tr:nth-of-type(even){ /* Select all the rows in the body with even number */
+                background-color: rgb(237 238 242); /* Its commone to alternate row colos, refers to as 'zebra stripping*/
+             }
+             tbody > tr >td:last-of-type{  /* right justify currency values table*/
+                text-align: right;
+             }
+             tfoot >tr{
+                border-top: 2px dashed rgb(140 140 140);
+                background-color: rgb(228 240 20);
+             }
+             tfoot th,
+             tfoot td{
+                text-align: right;
+                font-weight: bold;
+             }
+    </style>
+</head>
+<body>
+    <header>
+        <h1> Table Examples</h1>
+    </header>
+    <main>
+        <h2> Example 01</h2>
+        <table>
+            <tr>
+                <th>Name</th>
+                <th>ID</th>
+                <th>Member Since</th>
+                <th>Balance</th>
+            </tr>
+            <tr>
+                <th>Margaret</th>
+                <td>423232</td>
+                <td><time date="2010-06-03">June 3, 2010</time></td>
+                <td>0.00</td>
+                
+            </tr>
+            <tr>
+                <th>EDvard Galinski</th>
+                <td>343343</td>
+                <td>January 13, 2011</td>
+                <td>37.00</td>
+            </tr>
+            <tr>
+                <th>Hoshi Nakamura</th>
+                <td>601942</td>
+                <td><time datetime="2012-07-23">July 23, 2012</time></td>
+                <td>15.00</td>
+              </tr>
+        </table>
+
+        <h2> Example 02: Specifying table cell relations</h2>
+        <p>1 - Define relations between the header and data cells th and td. <br>
+        2 - This is accomplished by introducing the scope attribute on the th elements and setting the values to the corresponding col or row value. <br>
+        3 -The CSS and visual result are unchanged - the adatation provides valuabel contextual information for assistive technologies such as screen readers to help identify which cells the headers relate to. <br>
+        4 - Note: If the table structure is even more complex, the (additional) use of the headers attribute on the th and td elements may improve accessibility and help assistive technologies identify th <br>
+        5 - Column and row spanning: the header section now have has two rows <br>
+        6 - Table caption and column summary, use the caption element as a first child of the table element <br>
+        7 - Add a table footer using the tfoot element below the table body</p>
+        <table>
+            <caption>
+                Status of the club members 2021
+            </caption>
+            <thead>
+            <tr>
+                <th scope="col" rowspan="2">Name</th>
+                <th scope="col" rowspan="2">ID</th>
+                <th scope="col" colspan="2">Membership Dates</th>
+                <th scope="col" rowspan="2">Balance</th>
+            </tr>
+             <tr>
+                <th scope="col">Joined</th>
+                <th scope = "col">Canceled</th>
+             </tr>
+           </thead>
+           <tbody> 
+            <tr>
+                <th scope="row">Margaret</th>
+                <td>423232</td>
+                <td><time date="2010-06-03">June 3, 2010</time></td>
+                <td>N/A</td>
+                <td>0.00</td>
+                
+            </tr>
+            <tr>
+                <th scope="row">EDvard Galinski</th>
+                <td>343343</td>
+                <td>January 13, 2011</td>
+                <td>N/A</td>
+                <td>37.00</td>
+            </tr>
+            <tr>
+                <th scope="row">Hoshi Nakamura</th>
+                <td>601942</td>
+                <td><time datetime="2012-07-23">July 23, 2012</time></td>
+                <td>N/A</td>
+                <td>15.00</td>
+              </tr>
+            </tbody>
+            <tfoot>
+                <tr>
+                    <th scope="row" colspan="4">Total balance</th>
+                    <td>52.00</td>
+                </tr>
+            </tfoot>
+        </table>
+
+    </main>
+    <footer>wdd230 2025</footer>
+    
+</body>
+</html>

@@ -1,0 +1,32 @@
+table{
+    border:2px solid rgb(30 30 30);
+    padding:2px;
+    width: 400px;
+    height: auto;
+    margin: 0 auto;
+    border-collapse:collapse;
+    
+}
+th,
+td{
+    padding:10px 12px;
+    font:16px "open Sans", Helvetica, Arial, sans-serif;
+    border:1px solid rgb(30 30 30);
+}
+
+thead > tr:last-of-type >th:nth-of-type(1){ /* select the last row of the head, and the first head of that row*/
+    background-color: black;
+  
+ }
+ thead > tr:first-of-type{ /* select the last row of the head, and the first head of that row*/
+    background-color: black;
+    color:white;
+  
+ }
+ thead > tr:last-of-type{
+    background-color: grey;
+    color:white;
+ }
+ tbody > tr:nth-child(even){
+    background-color: #e6c7c7;
+ }

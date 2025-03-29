@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Esosa C. Obazee - WDD 230 - Web Frontend Development</title>
+    <meta name="description" content="WDD 230 - Web Frontend Development I - Esosa C. Obazee BYU-I">
+    <meta name="author" content="Esosa C. Obazee">
+    <link rel="stylesheet" href="styles/normalize.css">
+    <link rel="stylesheet" href="styles/base.css">
+    <link rel="stylesheet" href="styles/larger.css">
+    <script src="scripts/getDates.js" defer></script>
+    <link rel="stylesheet" href="styles/form.css">
+</head>
+<body>
+    <header>
+        
+        <img class="himg" src="images/profile-picture.jpg" alt="profile picture Esosa" height="361" width="289"><span class="name">Esosa C. Obazee</span>
+
+        <img src="images/dark-theme-svgrepo-com.svg" alt="dark mode" id="mode">
+       
+   </header> 
+   
+   <a id="menu" href="#"></a>
+   <nav >
+           <ul class="navbody">
+               <li class="active"><a href="#">Home</a></li>
+               <li><a href="#">Chamber</a></li>
+               <li><a href="#">Site Plan</a></li>
+               <li><a href="#">Form</a></li>
+           </ul>  
+   </nav>
+   <div class="form-main">
+   <main>
+    <h1>Course Registration</h1>
+    <div id="fmessage"></div>
+    <form class="regform" method="get" action="record.html">
+       <label> Username * <input type="text" id="intext" name="username" required> </label> 
+       <label> Password * <input type="password"  id="passw01" name="password" required pattern ="[A-Za-z0-9]{8}"> </label>
+       <label> Re-enter Password* <input type="password"  id="passw02" name="password" required> </label>
+       <label> Email* <input type="email"  id="imail" name="email" required pattern="[a-zA-Z0-9._%+-]+@byui\.edu$" title="Please enter a valid email address"> </label> 
+       <div id="rangeValue">1</div>
+       <label><input type="range" id="rng" name="range" min="1" max="10" value="1" step="1" list="rangevalues"></label>  
+       <datalist id="rangevalues">
+        <option value="1">1</option>
+        <option value="2">2</option>
+        <option value="3">3</option>
+        <option value="4">4</option>
+        <option value="5">5</option>
+        <option value="6">6</option>
+        <option value="7">7</option>
+        <option value="8">8</option>
+        <option value="9">9</option>
+        <option value="10">10</option>
+       </datalist>
+      <input type="submit" value="Register for course">
+    </form>
+   </main>
+</div>
+   <footer>
+    <p>©️ <span id="getYear"></span> | Esosa C. Obazee | Nigeria </p>
+    <p> Last Modified <span id="lastModified"></span></p>
+</footer>
+</body>
+</html>
