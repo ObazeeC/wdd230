@@ -63,22 +63,4 @@ function displayRatingValue(){
 
 // display error message for password
 
-const psw1 = document.querySelector("#passw01");
-const psw2 = document.querySelector("#passw02");
-const message = document.querySelector("#fmessage");
 
-psw2.addEventListener("focusout", checkSame);
-
-function checkSame(){
-	if(psw1.value !== psw2.value){
-		message.textContent = "❗ password do not  match";
-		message.style.visibility = "show";
-	
-		psw2.value="";
-		psw2.focus();
-	}else{
-		message.style.display = "none";
-		psw2.style.backgroundColor = "#fff";
-		psw2.style.color = "#000";
-	}
-}
