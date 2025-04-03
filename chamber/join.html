@@ -1,0 +1,128 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Chamber of Commerce Milan, Monza and Brianza</title>
+    <meta name="author"  content="Esosa Obazee | Wdd 230">
+    <meta name="description" content="WDD 230 - Web Frontend Development I - Esosa C. Obazee BYU-I">
+    <meta property="og:title" content="Milano, Monza and Brianza">
+    <meta property="og:type" content="website">
+    <meta property="og:image" content="https://cdn.getyourguide.com/img/tour/6758298857042946.jpeg/98.jpg">
+    <meta property="og:url" content="https://obazeec.github.io/wdd230/chamber/index.html">
+    <meta name="twitter:card" content="Milano, Monza and Brianza">
+
+    <link rel="icon" href="images/page-logo.webp">
+    
+    <link rel="stylesheet" href="styles/normalize.css">
+    <link rel="stylesheet" href="styles/base.css">
+    <link rel="stylesheet" href="styles/larger.css">
+    <script src="scripts/chamber.js" defer></script>
+</head>
+<body>
+   
+    <header>
+      <div class="pagelogo">
+       <img loading="lazy" src="images/page-logo.webp" alt="Site Logo">
+      </div>
+
+      <div class="iconlogo hedlogo">
+        <a href="#" ><img loading="lazy" src="images/fbook.webp" alt="Facebook logo"></a> 
+        <a href="#" > <img loading="lazy" src="images/instagram02.webp" alt="Instagram"></a>  
+        <a href="#" ><img loading="lazy" src="images/whatsapp01.webp" alt="Whatsapp"></a>
+        <a href="#" ><img loading="lazy" src="images/youtube01.webp" alt="Youtube"></a> 
+        <a href="#" ><img loading="lazy" src="images/twitter02.webp" alt="Youtube"></a> 
+        <a href="#" class="h-call">Join Our Channel</a>
+      </div>
+
+      <a id="menu" href="#"></a>
+    </header>
+
+        <nav >
+                <ul class="navbody">
+                    <li class="active"><a href="#">Home</a></li>
+                    <li><a href="#">About</a></li>
+                    <li><a href="#">Events</a></li>
+                    <li><a href="#">Community</a></li>
+                    <li><a href="#">Podcast</a></li>
+                    <li><a href="#">News</a></li>
+                    <li><a href="#">Directory</a></li>
+                    <li><a href="#">Join</a></li>
+                    <li><a href="#">Contacts</a></li>
+                </ul>  
+        </nav>
+   <div class="fmain">
+     <main>
+      <p> The purpose of this page is for a prospective member to apply to join the chamber of commerce through a membership application form. The instructions provide the specific form input and functional requirements.</p>
+
+      <form class="joinChannel" method="get" action="thankyou.html">
+       <label>First name * <input type="text" name="fname" id="fname" required> </label>
+       <label>Last name * <input type="text" name="lname" id="lname" required> </label>
+       <label>Title/Position  <input type="text" name="title" id="title" pattern="^[A-Za-z\- ]{7,}$" title="Must be atleast seven characters"> </label>
+       <label>Email Address * <input type="email" name="email" id="email" required> </label>
+       <label>Mobile Phone Number <input type="tel" name="telephone" id="telephone" required> </label>
+       <label>Business/Organization's name <input type="text" name="business" id="business" required> </label>
+       <div>Membership Level</div>
+       <label> <input type="radio" name="np" id="MBL"> NP Membership is for non profit organizations and there is no fee</label>
+       <label> <input type="radio" name="np" id="MBL"> Bronze Membership</label>
+       <label> <input type="radio" name="np" id="MBL"> Silver Membership</label>
+       <label> <input type="radio" name="np" id="MBL"> Gold Membership</label>
+
+       <label>Business/Organization Description<input type="textarea" name="description" id="description"> </label>
+       <label>Timestamp <input type="hidden" name="time" id="time" required> </label>
+
+       <input type="submit" value="Join Channel">
+      </form>
+      
+      <aside>
+        <h2>Membership level benefits</h2>
+         <P class="par1">Bronze Membership <br>
+          Silver Membership<br>
+          Gold Membership <br> </P>
+          
+          <P class="para2">Bronze benefits <br>
+            Silver benefits<br>
+            Gold benefits <br> </P>
+      </aside>
+     </main>
+    </div>
+
+    <footer>
+        
+        <div class="f-additional"> 
+           <h3>Contacts</h3>
+            <P>Regional managar : ezeezy@milanchamber.outlook.it</P>
+            <P>Events Coordinator: gracew@milanchamber.outlook.it</P>
+            <P>General enquiries : +3932-7843-4532</P>
+          
+        </div>
+        <div class="ref"> 
+          <h3>References</h3>
+          <a href="#">Lorem ipsum dolor sit amet.</a></li>
+          <a href="#">Lorem ipsum dolor sit amet.</a></li>
+          <a href="#">Lorem, ipsum dolor.</a></li>
+          <a href="#">Lorem ipsum dolor sit amet consectetur.</a></li>
+          <a href="#">Lorem ipsum dolor sit amet consectetur.</a></li>
+          <a href="#">Lorem, ipsum dolor.</a></li>
+          <a href="#">Lorem, ipsum dolor sit amet consectetur adipisicing elit.</a></li>
+          <a href="#">Lorem, ipsum dolor.</a></li>
+         
+       </div>
+        <div class="f-getdate">
+          <p>©️ <span id="getYear"></span> | Esosa C. Obazee | wdd 230 - Web Frontend Development I </p>
+          <p> Last Modified <span id="lastModified"></span></p>
+          
+      </div>
+      
+        <div class="iconlogo footlogo">
+          <a href="#" ><img loading="lazy" src="images/fbook.webp" alt="Facebook logo"></a> 
+          <a href="#" > <img loading="lazy" src="images/instagram02.webp" alt="Instagram"></a>  
+          <a href="#" ><img loading="lazy" src="images/whatsapp01.webp" alt="Whatsapp"></a>
+          <a href="#" ><img loading="lazy" src="images/youtube01.webp" alt="Youtube"></a> 
+          <a href="#" ><img loading="lazy" src="images/twitter02.webp" alt="Youtube"></a> 
+          </div>
+         
+         
+    </footer>
+</body>
+</html>
