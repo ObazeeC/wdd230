@@ -49,18 +49,4 @@ numberOfVisits++;
 
 localStorage.setItem("visit-key", numberOfVisits);
 
-//Scripts for the range
-const rangeValue = document.getElementById("rangevalue");
-const range = document.getElementById("rng");
-// Range event listener
-range.addEventListener('change', displayRatingValue);
-range.addEventListener('input', displayRatingValue);
-
-function displayRatingValue(){
-	rangeValue.innerHTML = range.value;
-}
-
-
-// display error message for password
-
 
