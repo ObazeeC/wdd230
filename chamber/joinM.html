@@ -1,0 +1,353 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Join the Mbabane City - Chamber of Commerce</title>
+    <meta name="description"
+        content="This page shows a form allowing interested business to join the Chamber.">
+    <meta name="author" content="Thandokuhle Simelane">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link
+        href="https://fonts.googleapis.com/css2?family=Libre+Franklin:ital,wght@0,100..900;1,100..900&family=Rubik:ital,wght@0,300..900;1,300..900&display=swap"
+        rel="stylesheet">
+    <link rel="stylesheet" href="styles/normalize.css">
+    <link rel="stylesheet" href="styles/base.css">
+    <link rel="stylesheet" href="styles/larger.css">
+    <link rel="icon" href="favicon.ico">
+    <script src="scripts/chamber.js" defer></script>
+    <meta property="og:title" content="Mbabane City - Chamber of Commerce">
+    <meta property="og:type" content="website">
+    <meta property="og:url" content="https://thandosim.github.io/wdd230/chamber">
+    <meta property="og:image" content="https://www.mbabane.org.sz/wp-content/uploads/2022/10/hom_0001_new-one.jpg">
+
+    <style>
+
+body {
+    font-family: "Libre Franklin", sans-serif;
+    margin: 0;
+    padding: 0;
+    display: grid;
+    grid-template-columns: auto;
+    justify-content:space-evenly;
+    background-color: aliceblue;
+}
+
+header {
+    display: grid;
+    grid-template-columns: 2fr 5fr 1fr;
+    text-align: center;
+    padding: 1rem;
+    align-items: center;
+    justify-items: center;
+}
+
+header span {
+    font-size:2rem
+}
+
+header img {
+    border-radius: 10%;
+}
+
+h1 {
+    font-size: 2rem;
+}
+
+#menu {
+	font-size: 1.5rem;
+	border: 0;
+	background: none;
+	color: #000;
+}
+
+#menu::before {
+	content: "☰";
+}
+
+#menu.open::before {
+	content: "❎";
+}
+
+.navigation {
+	display: flex;
+	flex-direction: column;
+	justify-content: space-evenly;
+	list-style: none;
+	background-color: blue;
+	color: #fff;
+}
+
+.navigation a {
+	display: none;
+	padding: 1rem;
+	text-align: center;
+	text-decoration: none;
+	color: #fff;
+}
+.navigation a:hover {
+	background-color: rgba(255,255,255,0.2);
+	color: #333;
+	font-weight: 700;
+}
+
+.open a {
+	display: block;
+}
+
+nav .active {
+	background-color: rgba(0,0,0,0.3)
+}
+
+nav ul {
+    list-style-type: none;
+    padding: 0;
+}
+
+main {
+    padding: 20px;
+    /* grid-column: 1/2; */
+}
+
+.hero {
+    height: 100vh;
+    position: relative;
+}
+
+.hero img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+
+.hero-text {
+    text-align: center;
+    position: absolute;
+    top: 10px;
+    /* width: 100%; */
+    /* transform: translate(-50%, -190%); */
+    color: rgb(255, 255, 255);
+}
+
+
+h1 {
+    text-align: center;
+}
+
+.join {
+    text-align: center;
+}
+
+.a-button {
+    border: 3px solid;
+    border-color: black;
+    padding-left: 25%;
+    padding-right: 25%;
+    padding-top: 10px;
+    padding-bottom: 10px;
+    border-radius: 6px;
+
+}
+
+.card {
+    background-color: #f4f4f4;
+    padding: 20px;
+    margin: 10px 0;
+    border-radius: 1px;
+}
+
+.card ul {
+    list-style-type: none;
+    background-color: #222;
+}
+
+footer {
+    background: blue;
+    padding: 2%;
+    text-align: center;
+    color: #fff;
+}
+
+.form-container {
+    display: flex;
+    flex-direction: column;
+}
+
+fieldset {
+    display: flex;
+    flex-direction: column;
+    margin: 30px;
+}
+
+label {
+    display: flex;
+    flex-direction: column;
+    padding: 10px;
+}
+
+input, select {
+    min-height: 50px;
+}
+
+input:required {
+    border-bottom: 10px blue solid;
+}
+
+input[type="submit"] {
+    background-color: blue;
+    color: white;
+    font-weight: bold;
+    border: none;
+    cursor: pointer;
+    padding: 10px 20px;
+    border-radius: 5px;
+    text-align: center;
+}
+
+input[type="submit"]:hover {
+    background-color: darkblue; 
+}
+
+#thankyou {
+    grid-column: 2/4;
+}
+
+#cards {
+
+    display: grid; 
+    grid-template-columns: repeat(auto-fit, minmax(320px, 1fr));
+}
+
+/* #cardslist {
+    display: flex;
+    flex-direction: column;
+} */
+
+
+.grid {
+    margin: 0.25rem;
+    padding: 0.35rem;
+    background-color: #eee;
+    border: 1px solid #bbb;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.list {
+    margin: 0.25rem;
+    padding: 0.35rem;
+    display: flex;
+    flex-direction: row;
+}
+
+.list section {
+    display: grid;
+    grid-template-columns: 2fr 2fr 1fr 1fr 1fr;
+}
+
+    </style>
+</head>
+
+<body>
+    <header>
+        <img src="images/logo.webp" alt="Mbabane City CoC Logo" width="105" height="105">
+        <span>Mbabane City - Chamber Of Commerce</span>
+        <button id="menu" aria-label="Open Menu"></button>
+    </header>
+
+    <nav>
+        <ul class="navigation">
+            <li><a href="index.html" target="_blank">Home</a></li>
+            <li><a href="discover.html" target="_blank">Discover</a></li>
+            <li><a href="directory.html" target="_blank">Directory</a></li>
+            <li class="active"><a href="join.html" target="_blank">Join</a></li>
+        </ul>
+    </nav>
+
+    <main>
+        <section class="form-container">
+            <h1>Join the Chamber</h1>
+            <form method="get" action="thankyou.html">
+                <!-- Applicant's First Name -->
+                <fieldset>
+                    <legend>Applicant Information</legend>
+                    <label>
+                        First Name:
+                        <input type="text" id="first-name" name="first-name" required>
+                    </label>
+                    <label>
+                        Last Name:
+                        <input type="text" id="last-name" name="last-name" required>
+                    </label>
+                    <label>
+                        Title/Position:
+                        <input type="text" id="position" name="position" 
+                               pattern="[A-Za-z\- ]{7,}" 
+                               title="Only letters, hyphens, and spaces are allowed, with a minimum of 7 characters">
+                    </label>
+                    <label>
+                        Email:
+                        <input type="email" id="email" name="email" required 
+                               placeholder="example@email.com">
+                    </label>
+                    <label>
+                        Mobile Phone Number:
+                        <input type="tel" id="phone" name="phone" required>
+                    </label>
+                </fieldset>
+            
+                <!-- Business Information -->
+                <fieldset>
+                    <legend>Business Information</legend>
+                    <label>
+                        Organization Name:
+                        <input type="text" id="organization" name="organization" required>
+                    </label>
+                    <label>
+                        Membership Level:
+                        <select id="membership-level" name="membership-level" required>
+                            <option value="">Select membership level</option>
+                            <option value="np">NP Membership</option>
+                            <option value="bronze">Bronze Membership</option>
+                            <option value="silver">Silver Membership</option>
+                            <option value="gold">Gold Membership</option>
+                        </select>
+                    </label>
+                    <label>
+                        Organization Description:
+                        <textarea id="description" name="description"></textarea>
+                    </label>
+                   <!-- --> <input type="hidden" id="timestamp" name="timestamp" value="">
+                </fieldset>
+            
+                <!-- Submit Button -->
+                <label>
+                    <input type="submit" value="Join the Chamber">
+                </label>
+            </form>
+            
+
+            <!-- Membership Benefits -->
+            <aside class="membership-benefits">
+                <h2>Membership Benefits</h2>
+                <ul>
+                    <li>NP Membership: Access to select events. Free</li>
+                    <li>Bronze Membership: Event discounts and basic training. $100</li>
+                    <li>Silver Membership: Spotlight advertising and advanced training. $200</li>
+                    <li>Gold Membership: Premium benefits including networking and promotional services. $300</li>
+                </ul>
+            </aside>
+        </section>
+    </main>
+
+    <footer>
+        <p>Mbabane City - Chamber of Commerce - email: tdmpembe@live.com - call: +268 2404 1163</p>
+        <p> &copy; <span id="currentyear"></span>, 👤Thandokuhle Simelane, 🌍Mbabane, Swaziland</p>
+        <p>Last modified - <span id="lastModified"></span></p>
+    </footer>
+</body>
+
+</html>

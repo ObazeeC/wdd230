@@ -3,9 +3,9 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Chamber of Commerce Milan, Monza and Brianza</title>
-    <meta name="author"  content="Esosa Obazee | Wdd 230">
-    <meta name="description" content="WDD 230 - Web Frontend Development I - Esosa C. Obazee BYU-I">
+    <title>Join the Chamber of Commerce Milan, Monza and Brianza</title>
+    <meta name="author"  content="Esosa C Obazee ">
+    <meta name="description" content="This page contains a web form, allowing business to join the Milan and Monza chamber of Commerce">
     <meta property="og:title" content="Milano, Monza and Brianza">
     <meta property="og:type" content="website">
     <meta property="og:image" content="https://cdn.getyourguide.com/img/tour/6758298857042946.jpeg/98.jpg">
@@ -13,7 +13,6 @@
     <meta name="twitter:card" content="Milano, Monza and Brianza">
 
     <link rel="icon" href="images/page-logo.webp">
-    
     <link rel="stylesheet" href="styles/normalize.css">
     <link rel="stylesheet" href="styles/base.css">
     <link rel="stylesheet" href="styles/larger.css">
@@ -53,7 +52,7 @@
         </nav>
    <div class="fmain">
      <main>
-      <p> The purpose of this page is for a prospective member to apply to join the chamber of commerce through a membership application form. The instructions provide the specific form input and functional requirements.</p>
+     
 
       <form class="joinChannel" method="get" action="thankyou.html">
        <label>First name * <input type="text" name="fname" id="fname" required> </label>
@@ -63,26 +62,24 @@
        <label>Mobile Phone Number <input type="tel" name="telephone" id="telephone" required> </label>
        <label>Business/Organization's name <input type="text" name="business" id="business" required> </label>
        <div>Membership Level</div>
-       <label> <input type="radio" name="np" id="MBL"> NP Membership is for non profit organizations and there is no fee</label>
+       <label> <input type="radio" name="np" id="MBL"> NP Membership for non profit organizations, for free</label>
        <label> <input type="radio" name="np" id="MBL"> Bronze Membership</label>
        <label> <input type="radio" name="np" id="MBL"> Silver Membership</label>
        <label> <input type="radio" name="np" id="MBL"> Gold Membership</label>
 
-       <label>Business/Organization Description<input type="textarea" name="description" id="description"> </label>
-       <label>Timestamp <input type="hidden" name="time" id="time" required> </label>
+       <label>Business/Organization Description<textarea type="textarea"  name="description" id="description" rows="6" cols="46"></textarea> </label>
+       <input type="hidden" name="timestamp" id="timestamp" value=""> 
 
        <input type="submit" value="Join Channel">
       </form>
       
       <aside>
-        <h2>Membership level benefits</h2>
-         <P class="par1">Bronze Membership <br>
-          Silver Membership<br>
-          Gold Membership <br> </P>
-          
-          <P class="para2">Bronze benefits <br>
-            Silver benefits<br>
-            Gold benefits <br> </P>
+      <h2> Membership level benefits</h2>
+      <ul>
+        <li><span> Bronze Membership  </span>: 20% discount on selected events, access trainings with 20% less in cost </li>
+        <li><span> Silver Membership </span> : 50% discount on selected events, access trainings with 50% less in cost </li>
+        <li><span> Gold Membership </span> : Access all events, trainings, for free.   </li>
+      </ul>   
       </aside>
      </main>
     </div>

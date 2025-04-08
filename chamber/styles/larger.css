@@ -188,6 +188,24 @@
         text-align: center;
         
       }
-      
+      /* confirmation page */
+      .confirmationMain main{
+        max-width: 70%;
+        background-color: aliceblue;
+       }
+       .confirmationMain h1{
+    
+    border-bottom: none;
+    text-align: center;
+    padding:.2rem;
+  }
+
+  .confirmationMain p{
+    max-width: 90%;
+    border: none;
+    margin: 1rem auto;
+    padding:1rem;
+    font-size: 19px;
+   }
 
 }
