@@ -357,11 +357,11 @@ p{
   padding:.7rem;
   margin:0 auto;
  
-}
+}/*
 .fmain aside li{
  margin-top: .6rem;
  list-style-type: none;
-}
+}*/
 .fmain aside span{
   color:red;
   font-weight: bold;
