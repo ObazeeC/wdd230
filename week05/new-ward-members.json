@@ -1,0 +1,34 @@
+{
+    "Family Name" : "Obazee",
+    "Date Moved In " : "December 4, 2024",
+    "Number of Records" : 4,
+    "Visited by Bishopric" : false,
+    "Family Members" : [
+        {
+            "name" : "Esosa Confidence Obazee",
+            "Gender": "Male",
+            "Birthday": "March 21, 1993"
+        },
+
+        {
+            "name" : "Eseiwi Esther Obazee",
+            "Gender": "Female",
+            "Birthday": "May 25, 1996"
+
+        },
+
+        {
+            "name" : "Gabriel Obazee",
+            "Gender": "Male",
+            "Birthday": "September 10, 2025"
+
+        },
+
+        {
+            "name" : "Noel Iyamu",
+            "Gender": "Male",
+            "Birthday": "March 20, 2027"
+
+        }
+    ]
+}
