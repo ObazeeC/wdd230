@@ -60,7 +60,7 @@ captionDescription.textContent = "test";
 */
 
 
-const url = 'https://api.openweathermap.org/data/2.5/weather?lat=49.75&lon=6.64&units=metric&appid=f2657353b8d6175001ada0f90d3c3831';
+const url = 'https://api.openweathermap.org/data/2.5/weather?lat=6.34&lon=5.599&units=metric&appid=f2657353b8d6175001ada0f90d3c3831';
 async function fetchAPI(){
 	try{
 		const response = await fetch(url);

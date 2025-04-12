@@ -40,17 +40,17 @@ footer{
 h2{
     font-family: 'Roboto', 'Serif'; 
     font-size: 17px;  
+    background-color:#0f0000;
+    color:white;
+    padding:.5rem;
+    text-align: center;  
    
 }
 h1{
     font-family: 'Roboto', 'Serif'; 
     font-size: 22px;
 }
-h2{
-    background-color: rgba(0,90,0,.3);
-    padding:.5rem;
-    text-align: center;   
-}
+
 
 h1{
         text-align: center;
@@ -156,12 +156,40 @@ nav{
 }
 .card{
     border:1px solid rgba(0,90,0,.5);
-    margin:1rem;
+    margin:1rem auto;
     padding:.5rem;
+    background-color: rgba(224, 237, 248,.2);
+    width: 600px;
+    max-width: 100%;
+    
+    background-color: rgba(0,90,0,.3);
+    
+
 }
 .card ul li{
-    list-style-type: none;
-    
+    list-style-type: none; 
+}
+.card ul{
+ margin-bottom:.5rem;   
+ 
+}
+.c2{
+    position:relative;
+   
+}
+#weather-icon{
+    position:relative;
+}
+#current-temp{
+    position: absolute;
+    top:3.2rem;
+    left:4rem;
+}
+#description{
+    position: absolute;
+    top:3.2rem;
+    left:9rem;
+   
 }
 iframe{
     width: 300px;
@@ -175,6 +203,7 @@ iframe{
     background-color: rgb(5, 5, 5);
     padding:.5rem;
 }
+
 footer{
     background-color: rgb(48, 44, 44);
     color:white;
