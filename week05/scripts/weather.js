@@ -5,7 +5,7 @@ const captionDescription = document.querySelector('figcaption');
 
 const url = 'https://api.openweathermap.org/data/2.5/weather?lat=49.75&lon=6.64&units=imperial&appid=f2657353b8d6175001ada0f90d3c3831';
 
-//units imperial = F,mph ; Metric = Celsius, m/s
+//units imperial = F,mph ; metric = Celsius, m/s
 
 async function apiFetch(){
     try{
