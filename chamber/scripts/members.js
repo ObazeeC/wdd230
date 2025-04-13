@@ -43,8 +43,8 @@ const displayBusiness = (businesses)=>{
     logo.setAttribute('src', business.image);
     logo.setAttribute('alt', `${business.name} logo`);
     logo.setAttribute('loading', 'lazy');
-    logo.setAttribute('width', '200');
-    logo.setAttribute('height', 'auto');
+    logo.setAttribute('width', '160');
+    logo.setAttribute('height', '150');
 
     // the address
     address.textContent = `Address: ${business.addresses}`;
@@ -62,16 +62,17 @@ const displayBusiness = (businesses)=>{
     // the name
     bName.textContent = `${business.name}`;
     
-  // appends 
+  // appends to section for each business
     section.appendChild(logo);
     section.appendChild(bName);
-    section.appendChild(url)
-    section.appendChild(address)
-    section.appendChild(email)
-    section.appendChild(phone)
-  
+    section.appendChild(url);
+    section.appendChild(address);
+    section.appendChild(email);
+    section.appendChild(phone);
+    section.appendChild(membership);
    
 
+    // appends sections to the div
     card.appendChild(section);
     })
 }
