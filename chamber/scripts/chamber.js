@@ -40,3 +40,4 @@ if(!lastVisit){
 localStorage.setItem('Lvisit', currentDate);
 
 
+//
