@@ -34,6 +34,8 @@ const displayBusiness = (businesses)=>{
     const bName = document.createElement('h2');
     const address = document.createElement('p');
     const email = document.createElement('p');
+    const phone = document.createElement('p');
+    const membership = document.createElement('p');
     const url = document.createElement('a');
     const logo = document.createElement('img');
 
@@ -48,9 +50,15 @@ const displayBusiness = (businesses)=>{
     address.textContent = `Address: ${business.addresses}`;
     // the email
     email.textContent = `Email : ${business.email}`;
+
+    // the phone
+    phone.textContent = `Phone : ${business.phone}`;
     //the url
     url.setAttribute('href', business.url);
     url.textContent = business.title;
+
+    //
+    membership.textContent = `Membership : ${business.membership}`;
     // the name
     bName.textContent = `${business.name}`;
     
@@ -60,6 +68,7 @@ const displayBusiness = (businesses)=>{
     section.appendChild(url)
     section.appendChild(address)
     section.appendChild(email)
+    section.appendChild(phone)
   
    
 
