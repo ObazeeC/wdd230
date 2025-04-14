@@ -71,7 +71,7 @@
 
     .navbody{
         display: flex;
-        max-width: 650px;
+        max-width: 470px;
         
        }
 
@@ -219,6 +219,31 @@
     margin: 1rem auto;
     padding:1rem;
     font-size: 19px;
+   }
+
+   /* directory page */
+   .list section{
+    width: 90%;
+    grid-template-columns: 1fr 1fr 1fr 1fr 1fr 1fr;
+   }
+
+   .list section p,
+   .list section h2,
+  .list section a{
+  text-align: left;
+}
+   .grid section{
+    width:300px;
+   }
+   .grid section img{
+    width:100px;
+    height:100px;
+   }
+   .grid{
+    width:80%;
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr 1fr;
+    margin: 1rem auto;
    }
 
 }

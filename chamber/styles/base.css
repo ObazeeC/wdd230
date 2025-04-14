@@ -385,35 +385,71 @@ p{
 }
 
 /* Directory page */
+
+
+/* menu */
 .direc-menu{
   margin: 1rem auto;
-  width: 300px;
+  width: 400px;
 	border: 1px solid rgba(0, 0, 0, 0.1);
 	padding: 0.5rem;
 	background-color: #bed;
 	text-align: center;
 }
 
-
+/* menu button */
 .direc-menu button {
 	padding: 1rem;
 	font-weight: 700;
 }
 
-#cont{
-  border: 2px solid red;
-
-  margin: 1rem auto;
-  display: grid;
-  grid-template-columns: 1fr 1fr 1fr 1fr;
-	grid-gap: 5px;
-	align-items: center;
+/* sections and section element LIST*/
+.list{
+  display: flex;
+  flex-direction: column;
 }
-#cont section{
-  width:400px;
+.list section{
+  display:grid;
+  grid-template-columns: 1fr;
   margin: 1rem auto;
-  border: 1px solid rgba(0, 0, 0, 0.1);
+  width:400px;
   padding:.5rem;
-  background-color: bisque;
-  
+  border:2px solid rgba(130, 98, 98, 0.302);
+}
+
+.list section p,
+.list section h2,
+.list section a{
+  text-align: center;
+}
+.list img{
+  display: none;
+}
+
+.list section:nth-child(even){
+  background-color: #bed;
+}
+
+/*
+Sections and section element with image view
+*/
+.grid section img{
+ display: block;
+ margin: 1rem auto;
+}
+
+.grid section{
+  display:grid;
+  grid-template-columns: 1fr;
+  margin: 1rem auto;
+  width:400px;
+  padding:.5rem;
+  border:2px solid rgba(130, 98, 98, 0.302);
+}
+
+
+.grid section p,
+.grid section h2,
+.grid section a{
+  text-align: center;
 }

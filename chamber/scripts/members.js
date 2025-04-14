@@ -65,11 +65,12 @@ const displayBusiness = (businesses)=>{
   // appends to section for each business
     section.appendChild(logo);
     section.appendChild(bName);
-    section.appendChild(url);
+  
     section.appendChild(address);
     section.appendChild(email);
     section.appendChild(phone);
     section.appendChild(membership);
+    section.appendChild(url);
    
 
     // appends sections to the div
