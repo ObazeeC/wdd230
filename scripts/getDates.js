@@ -54,6 +54,8 @@ localStorage.setItem("visit-key", numberOfVisits);
 const currentTemp = document.querySelector('#current-temp');
 const weatherIcon = document.querySelector('#weather-icon');
 const captionDescription = document.querySelector('#description');
+
+
 /*
 currentTemp.textContent = "test";
 captionDescription.textContent = "test";
