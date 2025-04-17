@@ -27,7 +27,7 @@ getAPI();
 // get the members       <div class="spotlight"></div>
 const base = "https://obazeec.github.io/wdd230/";
 const memberURL = "https://obazeec.github.io/wdd230/chamber/data/members.json";
-const card = document.querySelector('spotlight');
+const card = document.querySelector('.spotlight');
 
 
 async function fetchMemData(){
@@ -41,6 +41,7 @@ async function fetchMemData(){
           const data = await response.json();
   
           //console.table(data.businesses);
+          //displayData(data.businesses);
           displayData(data.businesses);
   
       }else{
@@ -53,10 +54,10 @@ async function fetchMemData(){
     }
   
 
-    const displayData = (bName) => {
-    bName.forEach((business) => {
+    const displayData = (businessName) => {
+    businessName.forEach((business) => {
        // const member = business.membership;
-        //if(member == "Silver" ||member == "Gold"){
+      
             if(business.membership == "Silver" || business.membership == "Gold"){
             const section = document.createElement('section');
 
@@ -83,16 +84,9 @@ async function fetchMemData(){
 
             card.appendChild(section);
 
-        
-
-        
-  
-      
-        
-;
         }
     })
-    }
+}
 
 
     fetchMemData();

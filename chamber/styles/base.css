@@ -32,10 +32,14 @@ nav{
 .hedlogo{
     display: none;
 }
+
+/* m-grd */
 .m-grd h2{
   padding:.5rem;
-  background-color: rgba(130, 98, 98, 0.302);
+ /* background-color: rgba(130, 98, 98, 0.302);*/
 }
+
+
 header{
     background-color: rgba(130, 98, 98, 0.302);
     position:relative;
@@ -142,9 +146,46 @@ p{
   }*/
    .section1{
     max-width: 420px;
+    margin: 1rem auto;
    }
-   .section1 div{
+   .section1 h2{
+    background-color: rgba(130, 98, 98, 0.302);
+   }
+
+   .spotlight{
+    max-width: 420px;
+    margin: 1.5rem auto;
+   /* background-color: rgba(130, 98, 98, 0.302);*/
+    border:1px solid rgba(0,0,0, 0.1) ;
+    
+  }
+  .spotlight section{
+    border: 1px solid rgba(185, 166, 129, 0.2);
+    max-width: 400px;
+    background-color: #bed;
+    border-radius: .2rem;
+  }
+  .spotlight img{
+    display: block;
+    margin: .5rem auto;
+  }
+
+  .spotlight p,
+  .spotlight h2{
+  text-align: center;
+  }
+  .spotlight a{
+    display: block;
+    text-align: center;
+  }
+
+   .weatheSection{
     border-bottom: 2px solid rgba(0,0,0, 0.1);
+    max-width: 400px;
+   }
+   .banner-mg{
+    border-bottom: 2px solid rgba(0,0,0, 0.1);
+    max-width: 400px;
    }
    .sidLink,
    .locaStorage{
@@ -187,9 +228,7 @@ p{
     padding:.6rem;
   }
  
-  .weatheSection h3{
-
-  }
+ 
  #description{
    position: absolute;
    top:2.2rem;;
@@ -249,17 +288,7 @@ p{
     background-color: rgba(185, 166, 129, 0.2);
     margin:1rem;
   }
-  .m-grd figcaption{
-    font-weight: bold;
-    text-align: center;
-    font-size: 18px;
-  }
-  .m-grd figure p{
-    font-weight: 300;
-    max-width: 335px;
-    text-align: left;
-    
-  }
+  
   .section004{
     display: flex;
     padding:.5rem;

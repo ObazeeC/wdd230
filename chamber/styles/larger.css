@@ -6,11 +6,7 @@
     footer{
         max-width: 100%;
     }
-.m-grd{
-  max-width: 90%;
-  margin: 0 auto;
 
-}
     h1{
       text-align: center;
       padding:.7rem;
@@ -125,6 +121,21 @@
       /*grid-template-rows:.4fr 2.5fr .3fr;*/
   
      } 
+     .m-grd{
+      max-width: 75%;
+      margin: 0 auto;
+      border: 2px solid red;
+    
+    }
+    .spotlight section{
+      max-width: 350px;
+      padding:1rem;
+    }
+    .spotlight{
+      display:grid ;
+      grid-template-columns: 1fr 1fr;
+      gap:1rem
+    }
      .milanh2{
       font-size: 36px;
      
