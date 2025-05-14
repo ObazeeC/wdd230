@@ -1,4 +1,9 @@
+
+
 @media screen and (min-width: 1200px){
+  *{
+    box-sizing: border-box;
+  }
     header,
     nav,
     main,
@@ -6,10 +11,14 @@
     footer{
         max-width: 100%;
     }
-
+    body{
+      border:2px solid red;
+    }
+    /*
+   
     h1{
       text-align: center;
-      padding:.7rem;
+       padding:.7rem;
        font-size: 45px;
        position:relative;
        left:9rem;
@@ -17,6 +26,8 @@
        border-bottom: 2px solid rgba(255, 165, 0, .1);
     }
 
+
+    */
     header{
     position:relative;
     }
@@ -29,10 +40,10 @@
     }
     
     .hedlogo{
-        display: flex;
-        position: absolute;
-        top:2rem;
-        right:20%; 
+      display: flex;
+      position: absolute;
+      top:2rem;
+      right:20%; 
     }
 
    .h-call {
@@ -115,9 +126,10 @@
     .hero a:hover{
       background-color:rgba(240, 205, 205,.8);
     }
+
      .m-grd{
       display: grid;
-      grid-template-columns: 1fr 3fr;
+      grid-template-columns: 1fr 2fr;
       /*grid-template-rows:.4fr 2.5fr .3fr;*/
   
      } 
@@ -127,6 +139,21 @@
       
     
     }
+
+    /* index */
+    .index-grd{
+      display: grid;
+      grid-template-columns: 1fr 2fr;
+      /*grid-template-rows:.4fr 2.5fr .3fr;*/
+  
+     } 
+     .index-grd{
+      max-width: 65%;
+      margin: 0 auto;
+      
+    
+    }
+
     .spotlight section{
       max-width: 350px;
       padding:.5rem;

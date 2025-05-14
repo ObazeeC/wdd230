@@ -1,0 +1,100 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        body{
+           /* background-color: red;*/
+           width: 300px;
+           background-color: azure;
+           margin: 0 auto;
+        }
+        button{
+            padding:.5rem;
+        }
+        #countdown{
+            width: 90px;
+            color: tomato;
+            border: 2px solid rgb(221, 235, 221);
+            background-color: antiquewhite;
+            padding: .5rem;
+            text-align: center;
+           
+        }
+    </style>
+</head>
+<body>
+    <h1 id="countdown"></h1>
+    
+    <button id="startButton">Start</button>
+     <button id="pauseResume">Pause</button>
+     
+     
+
+</body>
+<script>
+    const countDown = document.getElementById('countdown')
+    const butn = document.getElementById('startButton');
+    const pauseResume = document.getElementById('pauseResume');
+   
+    let startPoint = 10 ;
+
+    // Allow the user to input a custom starting time
+    // option 1: use prompt, but lack styling and customization
+    let userInput = prompt("Enter starting time : ");
+    startPoint = userInput;
+
+    //Add a variable 'pause/Resume' button to contronl the countdown
+    let isPaused = false;
+    let intervalId;
+
+    butn.addEventListener('click', () => {
+    if(!intervalId) { // prevent multiple intervals from starting. check to see if one is runing already
+
+  
+    intervalId = // set the intervalId to the setInterval, use to cancel the execution
+    setInterval(() => {
+    
+    if(!isPaused){
+        if(startPoint >= 0){
+        countDown.textContent = startPoint;
+        startPoint--;
+    }else{
+        clearInterval(intervalId); // stop the countdown
+        setTimeout(() =>{
+        countDown.textContent = "Time is up! ";
+        }, 1000); // wait one sec before displaying message
+
+    }
+
+    }
+   /*
+
+   // Adding paused/resume
+    if(startPoint >= 0){
+        countDown.textContent = startPoint;
+        startPoint--;
+    }else{
+        clearInterval(intervalId); // stop the countdown
+        setTimeout(() =>{
+        countDown.textContent = "Time is up! ";
+        }, 1000); // wait one sec before displaying message
+
+    }
+        */
+    }, 1000);// 1000 every one second
+       }
+    })
+    //Add event listener'pause/Resume' button to contronl the countdown
+    pauseResume.addEventListener('click', () =>{
+        isPaused = !isPaused;
+        pauseResume.textContent = isPaused ? "Resume" : "Pause";
+    });
+
+
+    
+
+</script>
+</html>
